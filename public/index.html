@@ -2,33 +2,187 @@
 <html lang="en">
 
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Technigo React App</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./no-js.css" />
+    <title>ACME</title>
   </head>
 
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- If JS is not available, the following noscript is executed -->
+    <noscript>
+      <p>You need to enable JavaScript to fully experience this website. Here is the non-JavaScript version:</p>
+      <!-- Header -->
+      <header class="outer-wrapper">
+        <nav class="nav-wrapper">
+          <a href="#"><img src="assets/acme-logo.png" alt="Acme Logotype"></a>
+            <ul class="links-wrapper">
+              <li><a href="#">Länk 1</a></li>
+              <li><a href="#">Länk 2</a></li>
+              <li><a href="#">Länk 3</a></li>
+              <li><a href="#">Länk 4</a></li>
+            </ul>
+            <button>Logga in</button>          
+        </nav>
+      </header>
+
+      <!-- Hero image -->
+      <section class="main-wrapper">
+        <div class="hero-wrapper">
+          <img class="hero-img" src="assets/Hero.png" alt="">
+          <div class="hero-content">
+            <h1>Quisque velit nisi</h1>
+            <p>
+              Cras ultricies ligula sed magna dictum porta.
+              Curabitur non nulla sit amet nisl tempus convallis 
+              quis ac lectus. Quisque velit nisi, pretium ut lacinia in, 
+              elementum id enim. Proin eget tortor risus.
+            </p>
+          </div>
+        </div>
+
+        <!-- Cards with info -->
+        <div class="cards-wrapper">
+          <div class="card">
+            <h2>Quisque velit nisi</h2>
+            <p>
+              Cras ultricies ligula sed magna dictum porta. 
+              Curabitur non nulla sit amet nisl tempus convallis 
+              quis ac lectus.
+            </p>
+            <a href="#">Quisque velit nisi</a>
+          </div>
+          <div class="card">
+            <h2>Quisque velit nisi</h2>
+            <p>
+              Cras ultricies ligula sed magna dictum porta. 
+              Curabitur non nulla sit amet nisl tempus convallis 
+              quis ac lectus. Quisque velit nisi, pretium ut lacinia in, 
+              elementum id enim. Proin eget tortor risus. Cras ultricies 
+              ligula sed magna dictum porta. Curabitur non nulla sit amet 
+              nisl tempus convallis quis ac lectus. Quisque velit nisi, 
+              pretium ut lacinia in.
+            </p>
+            <a href="#">Quisque velit nisi<img src="assets/arrow.png"></a>
+          </div>
+          <div class="card">
+            <h2>Curabitur non nulla sit amet</h2>
+            <p>
+              Cras ultricies ligula sed magna dictum porta. Curabitur non 
+              nulla sit amet nisl tempus convallis quis ac lectus. Quisque 
+              velit nisi, pretium ut lacinia in, elementum id enim. Proin 
+              eget tortor risus.
+            </p>
+            <a href="#">Quisque velit nisi</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mid section info -->
+      <section class="outer-wrapper purple">
+        <div class="mid-info-wrapper">
+          <h2 class="mid-info-h2">Proin eget tortor risus?</h2>
+          <p class="mid-info-p">
+            Cras ultricies ligula sed magna dictum porta.
+            Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+            Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+            Proin eget tortor risus.
+          </p> 
+          <button>Curabitur non</button>
+        </div>
+      </section>
+
+      <!-- Lower section with info -->
+      <section class="main-wrapper">
+        <div class="explanation-wrapper">
+          <img class="explanation-img" src="assets/Image-1.png" alt="Interiorism">
+          <div class="explanation-content">
+            <h2>Proin eget tortor risus?</h2>
+            <p>
+              Cras ultricies ligula sed magna dictum porta. Curabitur non 
+              nulla sit amet nisl tempus convallis quis ac lectus. Quisque 
+              velit nisi, pretium ut lacinia in, elementum id enim. Proin 
+              eget tortor risus.
+            </p>
+          </div>
+        </div>
+        <div class="explanation-wrapper right">
+          <div class="explanation-content">
+            <h2>Proin eget tortor risus?</h2>
+            <p>
+              Cras ultricies ligula sed magna dictum porta. Curabitur non 
+              nulla sit amet nisl tempus convallis quis ac lectus. Quisque 
+              velit nisi, pretium ut lacinia in, elementum id enim. Proin 
+              eget tortor risus.
+            </p>
+          </div>
+          <img class="explanation-img" src="assets/Image-2.png" alt="Construction">
+        </div>
+        <div class="explanation-wrapper">
+          <img class="explanation-img" src="assets/Image-3.png" alt="Apartments">
+          <div class="explanation-content">
+            <h2>Proin eget tortor risus?</h2>
+            <p>
+              Cras ultricies ligula sed magna dictum porta. Curabitur non 
+              nulla sit amet nisl tempus convallis quis ac lectus. Quisque 
+              velit nisi, pretium ut lacinia in, elementum id enim. Proin 
+              eget tortor risus.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="outer-wrapper">
+        <div class="footer-wrapper">
+          <div class="footer-links">
+            <div class="col-md-4">
+              <h4>EGET MALESUADA</h4>
+              <ul>
+                <li><a href="#">Sed magna dictum porta</a></li>
+                <li><a href="#">Cras ultricies ligula</a></li>
+                <li><a href="#">Curabitur</a></li>
+                <li><a href="#">Pretium</a></li>
+                <li><a href="#">Proin eget torto</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h4>PRETIUM</h4>
+              <ul>
+                <li><a href="#">Sed magna dictum porta</a></li>
+                <li><a href="#">Cras ultricies ligula</a></li>
+                <li><a href="#">Curabitur</a></li>
+                <li><a href="#">Proin eget torto</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-form-wrapper">
+            <h4>TORTOR RISUS</h4>
+            <form class="footer-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+              <label for="select-input"></label>
+              <select id="select-input" name="select-input">
+                <option value="alternativ1">Alternativ 1</option>
+                <option value="alternativ2">Alternativ 2</option>
+                <option value="alternativ3">Alternativ 3</option>
+                <option value="alternativ4">Alternativ 4</option>
+              </select>
+
+              <label for="text-input"></label>
+              <input type="text" id="text-input" name="text-input">
+              
+              <label for="checkbox-input">Proin eget tortor</label>
+              <input type="checkbox" id="checkbox-input" name="checkbox-input">
+              
+              <button type="submit">Skicka</button>
+            </form>
+          </div>
+        </div>
+      </footer>
+    </noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 
 </html>
+
