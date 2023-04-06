@@ -1,9 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import logo from 'assets/Acme-logo.png'
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <nav>
+      <Link className="logo" to="/"><img src={logo} alt="Acme Corporation" /></Link>
+    </nav>
   )
 }
 
 export default Header
+
