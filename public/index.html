@@ -15,23 +15,23 @@
     <noscript>
       <p class="no-js-banner">You need to enable JavaScript to fully experience this website. Here is the non-JavaScript version:</p>
       <!-- Header -->
-      <header class="outer-wrapper">
+      <header class="outer-wrapper gradient-header">
         <nav class="nav-wrapper">
-          <a href="#"><img class="logo" src="assets/acme-logo.png" alt="Acme Logotype"></a>
+          <a href="#"><img class="logo" src="assets/acme-logo.svg" alt="Acme Logotype"></a>
             <ul class="links-wrapper">
               <li><a href="#">SED MAGMA</a></li>
               <li><a href="#">ULTRICIES LIGULA</a></li>
               <li><a href="#">CURABITUR</a></li>
               <li><a href="#">PROIN EGET TORTO</a></li>
             </ul>
-            <button class="login-btn">LOGIN</button>          
+            <button class="login-btn"><img src="assets/user.svg" alt="">LOGIN</button>          
         </nav>
       </header>
 
       <!-- Hero image -->
       <section class="main-wrapper">
         <div class="hero-wrapper">
-          <img class="hero-img" src="assets/Hero.png" alt="">
+          <img class="hero-img" src="assets/Hero.svg" alt="">
           <div class="hero-content">
             <h1>Quisque velit nisi</h1>
             <p>
@@ -52,7 +52,13 @@
               Curabitur non nulla sit amet nisl tempus convallis 
               quis ac lectus.
             </p>
-            <a href="#">Quisque velit nisi</a>
+
+            <!-- DUBBELCHECK THIS -->
+            <div>
+              <a class="centered" href="#">
+                <p>Quisque velit nisi</p>
+                <img src="assets/arrow-black.svg" alt=""></a>     
+            </div>            
           </div>
           <div class="card">
             <h2>Quisque velit nisi</h2>
@@ -65,7 +71,7 @@
               nisl tempus convallis quis ac lectus. Quisque velit nisi, 
               pretium ut lacinia in.
             </p>
-            <a href="#">Quisque velit nisi<img src="assets/arrow.png"></a>
+            <a href="#">Quisque velit nisi <img src="assets/arrow-black.svg" alt="" srcset=""></a>
           </div>
           <div class="card">
             <h2>Curabitur non nulla sit amet</h2>
@@ -98,7 +104,7 @@
       <section class="main-wrapper">
         <div class="services-wrapper">
           <div class="services-info-wrapper">
-            <img class="services-info-img" src="assets/Image-1.png" alt="Interiorism">
+            <img class="services-info-img" src="assets/Image-1.svg" alt="Interiorism">
             <div class="services-info-content">
               <h2>Proin eget tortor risus?</h2>
               <p>
@@ -119,10 +125,10 @@
                 eget tortor risus.
               </p>
             </div>
-            <img class="services-info-img" src="assets/Image-2.png" alt="Construction">
+            <img class="services-info-img" src="assets/Image-2.svg" alt="Construction">
           </div>
           <div class="services-info-wrapper">
-            <img class="services-info-img" src="assets/Image-3.png" alt="Apartments">
+            <img class="services-info-img" src="assets/Image-3.svg" alt="Apartments">
             <div class="services-info-content">
               <h2>Proin eget tortor risus?</h2>
               <p>
@@ -137,7 +143,7 @@
       </section>
 
       <!-- Footer -->
-      <footer class="outer-wrapper footer">
+      <footer class="outer-wrapper gradient-footer">
         <div class="footer-wrapper">
           <div class="footer-links">
             <div>
@@ -172,16 +178,17 @@
                   <option value="alternativ4">Alternativ 4</option>
                 </select>
               </div>
-                
                 <label for="text-input"></label>
                 <input type="text" id="text-input" name="text-input">
-                <div>
-
-                  <input type="checkbox" id="checkbox-input" name="checkbox-input">
-                  <label for="checkbox-input">Proin eget tortor</label>
+                <div class="footer-check-submit-wrapper">
+                  <div class="check-wrapper">
+                    <input class="user-check-input" type="checkbox" id="checkbox-input" name="checkbox-input">
+                    <label for="checkbox-input">Proin eget tortor</label>
+                  </div>
+                  <div>
+                    <button class="action-btn" type="submit">Curabi</button>
+                  </div>
                 </div>
-
-              <button class="action-btn" type="submit">Skicka</button>
             </form>
           </div>
         </div>
