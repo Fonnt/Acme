@@ -13,18 +13,18 @@
   <body>
     <!-- If JS is not available, the following noscript is executed -->
     <noscript>
-      <p>You need to enable JavaScript to fully experience this website. Here is the non-JavaScript version:</p>
+      <p class="no-js-banner">You need to enable JavaScript to fully experience this website. Here is the non-JavaScript version:</p>
       <!-- Header -->
       <header class="outer-wrapper">
         <nav class="nav-wrapper">
-          <a href="#"><img src="assets/acme-logo.png" alt="Acme Logotype"></a>
+          <a href="#"><img class="logo" src="assets/acme-logo.png" alt="Acme Logotype"></a>
             <ul class="links-wrapper">
-              <li><a href="#">Länk 1</a></li>
-              <li><a href="#">Länk 2</a></li>
-              <li><a href="#">Länk 3</a></li>
-              <li><a href="#">Länk 4</a></li>
+              <li><a href="#">SED MAGMA</a></li>
+              <li><a href="#">ULTRICIES LIGULA</a></li>
+              <li><a href="#">CURABITUR</a></li>
+              <li><a href="#">PROIN EGET TORTO</a></li>
             </ul>
-            <button>Logga in</button>          
+            <button class="login-btn">LOGIN</button>          
         </nav>
       </header>
 
@@ -90,57 +90,59 @@
             Quisque velit nisi, pretium ut lacinia in, elementum id enim.
             Proin eget tortor risus.
           </p> 
-          <button>Curabitur non</button>
+          <button class="action-btn">Curabitur non</button>
         </div>
       </section>
 
       <!-- Lower section with info -->
       <section class="main-wrapper">
-        <div class="explanation-wrapper">
-          <img class="explanation-img" src="assets/Image-1.png" alt="Interiorism">
-          <div class="explanation-content">
-            <h2>Proin eget tortor risus?</h2>
-            <p>
-              Cras ultricies ligula sed magna dictum porta. Curabitur non 
-              nulla sit amet nisl tempus convallis quis ac lectus. Quisque 
-              velit nisi, pretium ut lacinia in, elementum id enim. Proin 
-              eget tortor risus.
-            </p>
+        <div class="services-wrapper">
+          <div class="services-info-wrapper">
+            <img class="services-info-img" src="assets/Image-1.png" alt="Interiorism">
+            <div class="services-info-content">
+              <h2>Proin eget tortor risus?</h2>
+              <p>
+                Cras ultricies ligula sed magna dictum porta. Curabitur non 
+                nulla sit amet nisl tempus convallis quis ac lectus. Quisque 
+                velit nisi, pretium ut lacinia in, elementum id enim. Proin 
+                eget tortor risus.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="explanation-wrapper right">
-          <div class="explanation-content">
-            <h2>Proin eget tortor risus?</h2>
-            <p>
-              Cras ultricies ligula sed magna dictum porta. Curabitur non 
-              nulla sit amet nisl tempus convallis quis ac lectus. Quisque 
-              velit nisi, pretium ut lacinia in, elementum id enim. Proin 
-              eget tortor risus.
-            </p>
+          <div class="services-info-wrapper right">
+            <div class="services-info-content">
+              <h2>Proin eget tortor risus?</h2>
+              <p>
+                Cras ultricies ligula sed magna dictum porta. Curabitur non 
+                nulla sit amet nisl tempus convallis quis ac lectus. Quisque 
+                velit nisi, pretium ut lacinia in, elementum id enim. Proin 
+                eget tortor risus.
+              </p>
+            </div>
+            <img class="services-info-img" src="assets/Image-2.png" alt="Construction">
           </div>
-          <img class="explanation-img" src="assets/Image-2.png" alt="Construction">
-        </div>
-        <div class="explanation-wrapper">
-          <img class="explanation-img" src="assets/Image-3.png" alt="Apartments">
-          <div class="explanation-content">
-            <h2>Proin eget tortor risus?</h2>
-            <p>
-              Cras ultricies ligula sed magna dictum porta. Curabitur non 
-              nulla sit amet nisl tempus convallis quis ac lectus. Quisque 
-              velit nisi, pretium ut lacinia in, elementum id enim. Proin 
-              eget tortor risus.
-            </p>
+          <div class="services-info-wrapper">
+            <img class="services-info-img" src="assets/Image-3.png" alt="Apartments">
+            <div class="services-info-content">
+              <h2>Proin eget tortor risus?</h2>
+              <p>
+                Cras ultricies ligula sed magna dictum porta. Curabitur non 
+                nulla sit amet nisl tempus convallis quis ac lectus. Quisque 
+                velit nisi, pretium ut lacinia in, elementum id enim. Proin 
+                eget tortor risus.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Footer -->
-      <footer class="outer-wrapper">
+      <footer class="outer-wrapper footer">
         <div class="footer-wrapper">
           <div class="footer-links">
-            <div class="col-md-4">
+            <div>
               <h4>EGET MALESUADA</h4>
-              <ul>
+              <ul class="footer-ul">
                 <li><a href="#">Sed magna dictum porta</a></li>
                 <li><a href="#">Cras ultricies ligula</a></li>
                 <li><a href="#">Curabitur</a></li>
@@ -148,9 +150,9 @@
                 <li><a href="#">Proin eget torto</a></li>
               </ul>
             </div>
-            <div class="col-md-4">
+            <div>
               <h4>PRETIUM</h4>
-              <ul>
+              <ul class="footer-ul">
                 <li><a href="#">Sed magna dictum porta</a></li>
                 <li><a href="#">Cras ultricies ligula</a></li>
                 <li><a href="#">Curabitur</a></li>
@@ -159,27 +161,36 @@
             </div>
           </div>
           <div class="footer-form-wrapper">
-            <h4>TORTOR RISUS</h4>
             <form class="footer-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-              <label for="select-input"></label>
-              <select id="select-input" name="select-input">
-                <option value="alternativ1">Alternativ 1</option>
-                <option value="alternativ2">Alternativ 2</option>
-                <option value="alternativ3">Alternativ 3</option>
-                <option value="alternativ4">Alternativ 4</option>
-              </select>
+              <div class="footer-select-wrapper">
+                <h4>TORTOR RISUS</h4>
+                <label for="select-input"></label>
+                <select id="select-input" name="select-input">
+                  <option value="alternativ1">Alternativ 1</option>
+                  <option value="alternativ2">Alternativ 2</option>
+                  <option value="alternativ3">Alternativ 3</option>
+                  <option value="alternativ4">Alternativ 4</option>
+                </select>
+              </div>
+                
+                <label for="text-input"></label>
+                <input type="text" id="text-input" name="text-input">
+                <div>
 
-              <label for="text-input"></label>
-              <input type="text" id="text-input" name="text-input">
-              
-              <label for="checkbox-input">Proin eget tortor</label>
-              <input type="checkbox" id="checkbox-input" name="checkbox-input">
-              
-              <button type="submit">Skicka</button>
+                  <input type="checkbox" id="checkbox-input" name="checkbox-input">
+                  <label for="checkbox-input">Proin eget tortor</label>
+                </div>
+
+              <button class="action-btn" type="submit">Skicka</button>
             </form>
           </div>
         </div>
       </footer>
+      <section>
+        <div class="copyright-wrapper">
+          <p class="copyright">© ACME 2023</p>
+        </div>
+      </section>
     </noscript>
     <div id="root"></div>
   </body>
