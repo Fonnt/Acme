@@ -1,8 +1,19 @@
 import React from 'react'
+import Hero from './Hero'
+import Cards from './Cards'
+import MidInfoBanner from './MidInfoBanner'
+import ServicesInfo from './ServicesInfo'
+import Footer from './Footer'
 
 const LandingPage = () => {
   return (
-    <div>LandingPage</div>
+    <>
+      <Hero />
+      <Cards />
+      <MidInfoBanner />
+      <ServicesInfo />
+      <Footer />
+    </>
   )
 }
 
