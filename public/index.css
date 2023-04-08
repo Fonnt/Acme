@@ -105,7 +105,6 @@ button {
   background-color: var(--darkBtn);
   padding: 1vh 2vh;
   font-size: 0.75rem;
-  text-transform: uppercase;
 }
 
 /* HEADER + NAV */
@@ -139,7 +138,6 @@ button {
   gap: 1vw;
   justify-content: flex-end;
   font-size: 0.75rem;
-  text-transform: uppercase;
 }
 
 .links-wrapper a {
