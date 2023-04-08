@@ -277,6 +277,10 @@ button {
   gap: 1vh;
 }
 
+.footer-ul a {
+  color: var(--white);
+}
+
 .footer-form-wrapper {
   display: flex;
   flex-direction: column;
@@ -321,16 +325,16 @@ input[type=text] {
   justify-content: space-between;
 }
 
-.user-check-input {
-  width: 1rem;
-  height: 1rem;
-  margin: 0;
-}
-
 .check-wrapper {
   display: flex;
   align-items: center;
   gap: 1vh;
+}
+
+.user-check-input {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0;
 }
 
 .copyright {
@@ -338,7 +342,7 @@ input[type=text] {
   justify-content: center;
   color: var(--white);
   padding: 2vh 0;
-  border-top: 1px solid var(--lightBtn);
+  border-top: 2px solid var(--lightBtn);
   font-size: 0.875rem;
   background-color: var(--purple);
 }
@@ -459,4 +463,49 @@ input[type=text] {
     padding: 2vh 10%;
     text-align: right;
   }
+
+  /* HOVERS */
+
+    /* GLOBAL */
+
+    a:hover {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }    
+
+    button {
+      transition-duration: 0.3s;
+      cursor: pointer;
+    }
+
+    select:hover, input[type=text]:hover {
+      cursor: pointer;
+      background-color: var(--lightBtn);
+    }
+
+    /* BUTTONS */
+
+    .login-btn:hover {
+      background-color: var(--lightBtn);
+    }
+
+    .action-btn:hover {
+      background-color: var(--darkBtn);
+    }
+
+    /* INPUTS */    
+
+    .user-check-input {
+      cursor: pointer;
+    }
+
+    /* CARDS */
+    
+    .card {
+      transition: .1s;
+    }
+
+    .card:hover {
+     transform: scale(1.01);
+    }
 }
