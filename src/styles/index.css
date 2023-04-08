@@ -466,46 +466,46 @@ input[type=text] {
 
   /* HOVERS */
 
-    /* GLOBAL */
+  /* GLOBAL */
 
-    a:hover {
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }    
+  a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }    
 
-    button {
-      transition-duration: 0.3s;
-      cursor: pointer;
-    }
+  button {
+    transition-duration: 0.3s;
+    cursor: pointer;
+  }
 
-    select:hover, input[type=text]:hover {
-      cursor: pointer;
-      background-color: var(--lightBtn);
-    }
+  select:hover, input[type=text]:hover {
+    cursor: pointer;
+    background-color: var(--lightBtn);
+  }
 
-    /* BUTTONS */
+  /* BUTTONS */
 
-    .login-btn:hover {
-      background-color: var(--lightBtn);
-    }
+  .login-btn:hover {
+    background-color: var(--lightBtn);
+  }
 
-    .action-btn:hover {
-      background-color: var(--darkBtn);
-    }
+  .action-btn:hover {
+    background-color: var(--darkBtn);
+  }
 
-    /* INPUTS */    
+  /* INPUTS */    
 
-    .user-check-input {
-      cursor: pointer;
-    }
+  .user-check-input {
+    cursor: pointer;
+  }
 
-    /* CARDS */
-    
-    .card {
-      transition: .1s;
-    }
+  /* CARDS */
+  
+  .card {
+    transition: .1s;
+  }
 
-    .card:hover {
-     transform: scale(1.01);
-    }
+  .card:hover {
+    transform: scale(1.01);
+  }
 }
