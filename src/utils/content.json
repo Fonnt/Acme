@@ -35,29 +35,95 @@
       "id": "3"
     }
   ],
+  "mid_info": {
+    "title": "Proin eget tortor risus?",
+    "info": "Cras ultricies ligula sed magna dictum porta. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Proin eget tortor risus."
+  },
   "services": [
     {
       "title": "Proin eget tortor risus?",
       "info": "Cras ultricies ligula sed magna dictum porta. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Proin eget tortor risus.",
-      "image": "./assets/Image-1.svg"
+      "image": "./assets/Image-1.svg",
+      "id": "1"
     },
     {
       "title": "Proin eget tortor risus?",
       "info": "Cras ultricies ligula sed magna dictum porta. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Proin eget tortor risus.",
-      "image": "./assets/Image-2.svg"
+      "image": "./assets/Image-2.svg",
+      "id": "2"
     },
     {
       "title": "Proin eget tortor risus?",
       "info": "Cras ultricies ligula sed magna dictum porta. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Proin eget tortor risus.",
-      "image": "./assets/Image-3.svg"
+      "image": "./assets/Image-3.svg",
+      "id": "3"
     }
   ],
   "footer": [
     {
-      "title": "Eget Malesuada"
+      "title": "Eget Malesuada",
+      "links": [
+        {
+          "text": "Sed magna dictum porta",
+          "link_to": "/fake-page"
+        },
+        {
+          "text": "Cras ultricies ligula",
+          "link_to": "/fake-page"
+        },
+        {
+          "text": "Curabitur",
+          "link_to": "/fake-page"
+        },
+        {
+          "text": "Pretium",
+          "link_to": "/fake-page"
+        },
+        {
+          "text": "Proin eget torto",
+          "link_to": "/fake-page"
+        }
+      ]
     },
     {
-      "title": "Pretium"
+      "title": "Pretium",
+      "links": [
+        {
+          "text": "Sed magna dictum porta",
+          "link_to": "/fake-page"
+        },
+        {
+          "text": "Cras ultricies ligula",
+          "link_to": "/fake-page"
+        },
+        {
+          "text": "Curabitur",
+          "link_to": "/fake-page"
+        },
+        {
+          "text": "Proin eget torto",
+          "link_to": "/fake-page"
+        }
+      ]
+    }
+  ],
+  "footer_form": [
+    {
+      "title": "Tortor Risus",
+      "alternatives": [
+        {
+          "text": "Alternative 1"
+        },
+        {
+          "text": "Alternative 2"
+        },
+        {
+          "text": "Alternative 3"
+        },
+        {
+          "text": "Alternative 4"
+        }
+      ]
     }
   ],
   "utils": {
