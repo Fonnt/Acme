@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import content from 'utils/content.json'
 
 const Cards = () => {
@@ -10,10 +11,10 @@ const Cards = () => {
         <h2>{card.title}</h2>
         <p>{card.info}</p>
         <div>
-          <a className="centered" href="#">
+          <Link to="/fake-page" className="centered">
             <p>{card.linkText}</p>
             <img src={content.utils.arrow_black} alt="" />
-          </a>
+          </Link>
         </div>
       </div>
     )

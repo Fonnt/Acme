@@ -9,6 +9,7 @@ import UltriciesLigula from 'components/fictitialPages/UltriciesLigula';
 import Curabitur from 'components/fictitialPages/Curabitur';
 import Login from 'components/Login';
 import ProinEgetTorto from 'components/fictitialPages/ProinEgetTorto';
+import FakePage from 'components/fictitialPages/FakePage';
 
 export const App = () => {
   return (
@@ -20,6 +21,7 @@ export const App = () => {
         <Route path="/ultricies-ligula" element={<UltriciesLigula />} />
         <Route path="/curabitur" element={<Curabitur />} />
         <Route path="/proin-eget-torto" element={<ProinEgetTorto />} />
+        <Route path="/fake-page" element={<FakePage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/404" element={<NotFound />} />
         <Route path="*" element={<Navigate to="404" />} />
