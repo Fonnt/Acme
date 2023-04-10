@@ -10,6 +10,7 @@ import Curabitur from 'components/fictitialPages/Curabitur';
 import Login from 'components/Login';
 import ProinEgetTorto from 'components/fictitialPages/ProinEgetTorto';
 import FakePage from 'components/fictitialPages/FakePage';
+import Footer from 'components/Footer';
 
 export const App = () => {
   return (
@@ -26,6 +27,7 @@ export const App = () => {
         <Route path="/404" element={<NotFound />} />
         <Route path="*" element={<Navigate to="404" />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }

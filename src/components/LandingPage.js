@@ -3,7 +3,6 @@ import Hero from './Hero'
 import Cards from './Cards'
 import MidInfoBanner from './MidInfoBanner'
 import ServicesInfo from './ServicesInfo'
-import Footer from './Footer'
 
 const LandingPage = () => {
   return (
@@ -12,7 +11,6 @@ const LandingPage = () => {
       <Cards />
       <MidInfoBanner />
       <ServicesInfo />
-      <Footer />
     </>
   )
 }
