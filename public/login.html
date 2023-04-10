@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <noscript>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./login.css">
+
+  </noscript>
+  <title>ACME</title>
+</head>
+<body>
+  <noscript>
+    <div class="no-js-banner">
+      <p>You need to enable JavaScript to fully experience this website. Here is the non-JavaScript version:</p>
+    </div>
+    
+    <!-- Header -->
+    <header class="outer-wrapper gradient-header">
+      <nav class="nav-wrapper">
+        <div class="logo-wrapper">
+          <a href="./index.html"><img class="logo" src="assets/acme-logo.svg" alt="Acme Logotype"></a>
+        </div>
+        <div class="container">
+          <ul class="links-wrapper">
+            <li><a href="./index.html #hero">SED MAGMA</a></li>
+            <li><a href="./index.html #cards">ULTRICIES LIGULA</a></li>
+            <li><a href="./index.html #mid-section">CURABITUR</a></li>
+            <li><a href="./index.html #services">PROIN EGET TORTO</a></li>
+          </ul>
+          <a href="./login.html"><button class="login-btn"><img src="assets/user.svg" alt="User login"><p class="disp-none">LOGIN</p></button></a>  
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <section class="login-form-wrapper">
+        <div class="login-wrapper">
+          <form class="form card" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+            <h1>LOGIN</h1>
+            <label for="email" class="screen-reader-only">email</label>
+            <input type="email" name="email" id="email" placeholder="Email">
+            <label for="password" class="screen-reader-only">password</label>
+            <input type="password" name="password" id="password" placeholder="Password">
+            <button class="submit"type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="outer-wrapper gradient-footer">
+      <div class="footer-wrapper">
+        <div class="footer-links">
+          <div>
+            <h3>Eget Malesuada</h3>
+            <ul class="footer-ul">
+              <li><a href="#">Sed magna dictum porta</a></li>
+              <li><a href="#">Cras ultricies ligula</a></li>
+              <li><a href="#">Curabitur</a></li>
+              <li><a href="#">Pretium</a></li>
+              <li><a href="#">Proin eget torto</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Pretium</h3>
+            <ul class="footer-ul white">
+              <li><a href="#">Sed magna dictum porta</a></li>
+              <li><a href="#">Cras ultricies ligula</a></li>
+              <li><a href="#">Curabitur</a></li>
+              <li><a href="#">Proin eget torto</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="form-wrapper">
+          <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+            <div class="footer-select-wrapper">
+              <h3>Tortor Risus</h3>
+              <label class="screen-reader-only" for="select-input">Choose an alternative</label>
+              <select id="select-input" name="select-input" >
+                <option value="null" class="grey" disabled selected >(Donec rutrum)</option>
+                <option value="alternativ1">Alternative 1</option>
+                <option value="alternativ2">Alternative 2</option>
+                <option value="alternativ3">Alternative 3</option>
+                <option value="alternativ4">Alternative 4</option>
+              </select>
+            </div>
+              <label class="screen-reader-only" for="text-input">Write your text</label>
+              <input type="text" id="text-input" name="text-input" placeholder="Proin eget tortor">
+              <div class="footer-check-submit-wrapper">
+                <div class="check-wrapper">
+                  <input class="user-check-input" type="checkbox" id="checkbox-input" name="checkbox-input">
+                  <label class="screen-reader-only" for="checkbox-input">Check the box</label>
+                  <p>Proin eget tortor</p>
+                </div>
+                <div>
+                  <button class="action-btn" type="submit">Curabi</button>
+                </div>
+              </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <section>
+      <div class="copyright-wrapper">
+        <p class="copyright">© ACME 2023</p>
+      </div>
+    </section>
+  </noscript>
+  <div id="root"></div>
+</body>
+</html>
