@@ -28,6 +28,7 @@ body {
 h1 {
   font-size: 2rem;
   font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 h2 {
@@ -35,8 +36,9 @@ h2 {
   font-weight: 700;
 }
 
-h4 {
+h3 {
   font-size: 1.125rem;
+  font-weight: 600;
   margin-bottom: 1vh;
 }
 
@@ -52,6 +54,21 @@ button {
   border: none;
   border-radius: .2rem;
   color: var(--white);
+}
+
+input[type=text], input[type=email], input[type=password] {
+  height: 8vh;
+  margin: 0;
+  padding: 0 1vh;
+  font-weight: 500;
+  border: 1px solid var(--green);
+  border-radius: .3rem;
+}
+
+.screen-reader-only {
+  position: absolute;
+  visibility: hidden;
+  font-size: 1px;
 }
 
 /* MAIN WRAPPERS */
@@ -70,7 +87,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 /* UTILS */
@@ -91,6 +107,10 @@ button {
   gap: 1vh;
 }
 
+.disp-none {
+  display: none;
+}
+
 /* BUTTONS */
 
 .action-btn {
@@ -100,17 +120,19 @@ button {
 
 .login-btn {
   display: flex;
+  width: 2rem;
+  height: 2rem;
   align-items: center;
-  gap: 1vw;
+  justify-content: center;
   background-color: var(--darkBtn);
-  padding: 1vh 2vh;
+  border-radius: 50%;
   font-size: 0.75rem;
 }
 
 /* HEADER + NAV */
 
 .no-js-banner {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -120,66 +142,122 @@ button {
 
 .nav-wrapper {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 80%;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-evenly;
+  width: 90%;
   height: 10vh;
-  gap: 3vw;
-  color: var(--white)
+  gap: 1vh;
+  color: var(--white);
+  padding: 2vh
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-wrapper a {
+  text-align: center;
 }
 
 .logo {
-  width: 50px;
+  width: 60%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
 }
 
 .links-wrapper {
   width: 100%;
   display: flex;
-  gap: 1vw;
-  justify-content: flex-end;
-  font-size: 0.75rem;
+  gap: 3vw;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.625rem;
+}
+
+.links-wrapper li {  
+  text-align: center;
 }
 
 .links-wrapper a {
   color: var(--white);
 }
 
+/* STYLE FOR "FAKE PAGES" */
+/* note: best to create different css files in order to shorten them */
+/* note */
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 10% 0;;
+}
+
+.login-form-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.login-wrapper form {
+  margin: 0;
+}
+
+.form h1 {
+  margin: 0;
+  color: var(--black)
+}
+
+.submit {
+  width: 100%;
+  height: 5vh;
+  background-color: var(--purple)
+}
+
 /* HERO SECTION */
 
 .hero-wrapper{
   width: 100%;
+  height: 40vh;
+  margin: 10% 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 10% 0;
+  justify-content: center;  
   position: relative;
 }
 
 .hero-img {
   width: 100%;
-  height: 40vh;
-  z-index: -1;
-  filter: brightness(60%);
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-gradient {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgb(0, 0, 0, 0.01), rgb(0, 0, 0));
+  position: absolute;
 }
 
 .hero-content {
   width: 80%;
-  height: 30vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   position: absolute;
-  color: #ffffff;
-  gap: 1rem;
-  padding: 2%;
-  
+  color: var(--white);
+  bottom: 10%;
+  left: 10%;
 }
 
 /* CARDS */
 
 .cards-wrapper {
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   gap: 2vh;
@@ -192,7 +270,7 @@ button {
   background-color: var(--white);
   border-radius: .3rem;
   padding: 5vw;
-  height: 18.75rem;
+  height: auto;
   gap: 1rem;
   justify-content: flex-start;
 }
@@ -281,16 +359,20 @@ button {
   color: var(--white);
 }
 
-.footer-form-wrapper {
+.form-wrapper {
   display: flex;
   flex-direction: column;
   color:  var(--white);
 }
 
+.footer-select-wrapper {
+  position: relative;
+}
+
 .footer-select-wrapper select{
   width: 100%;
   height: 5vh;
-  font-family: 'Inter', sans-serif;
+  /* font-family: 'Inter', sans-serif; */
   font-weight: 500;
   border: 1px solid var(--green);
   border-radius: .3rem;
@@ -302,21 +384,12 @@ button {
   border-color: var(--green)
 }
 
-input[type=text] {
-  height: 8vh;
-  margin: 0;
-  padding: 0;
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  border: 1px solid var(--green);
-  border-radius: .3rem;
-}
-
-.footer-form {
+.form {
   display: flex;
   flex-direction: column;
   gap: 1vh;
   margin-bottom: 3vh;
+  position: relative;
 }
 
 .footer-check-submit-wrapper {
@@ -347,17 +420,20 @@ input[type=text] {
   background-color: var(--purple);
 }
 
-
 /* BREAKPOINTS */
 
 @media (min-width: 1024px) {
-
+  
   /* NAV */
-
-  .nav-wrapper {
+  
+  .nav-wrapper {   
+    width: 80%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     height: 13vh;
   }
-
+  
   .links-wrapper {
     gap: 3vw;
     justify-content: flex-end;
@@ -368,26 +444,34 @@ input[type=text] {
     width: 100%;
   }
 
+  .login-btn {
+    width: fit-content;
+    border-radius: .3rem;
+    gap: 1vw;
+    padding: 0 1vw;
+  }
+
+  .disp-none {
+    display: block;
+  }
+
   /* HERO */
 
   .hero-wrapper{
-    padding: 5% 0;
-  }
-
-  .hero-img {
     width: 80%;
-    height: auto;
   }
-
+  .hero-gradient {
+    width: 100%;
+  }
   .hero-content {
-    width: 35%;
-    left: 13%;
-    bottom: 20%;
+    width: 50%;
+    left: 5%;
   }
 
   /* CARDS */
 
   .cards-wrapper {
+    width: 80%;
     flex-direction: row;
     gap: 2vh;
   }
@@ -447,13 +531,13 @@ input[type=text] {
     margin: 0;
   }
 
-  .footer-form-wrapper {
+  .form-wrapper {
     width: 50%;
     align-items: flex-end;
     padding: 5% 0;
   }
 
-  .footer-form {
+  .form {
     width: 70%;
     margin: 0;
   }
@@ -495,7 +579,7 @@ input[type=text] {
 
   /* INPUTS */    
 
-  .user-check-input {
+  input {
     cursor: pointer;
   }
 
